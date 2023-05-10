@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+corner
+{% endblock %}
+
+{% block header %}
+<p>Уголок покупателя</p>
+<p>ВАСИЛИЙ ПУПКИН</p>
+{% endblock %}
+
+{% block interface %}
+    <ul style="text-align: left; list-style-type: none;">
+      <a href="{% url 'reviews' %}"> <li class="buy-corner">Книга отзывов и предложений</li></a>
+      <a href="#"> <li class="buy-corner">Права покупателя</li></a>
+      <a href="#"> <li class="buy-corner">Документы</li></a>
+      <a href="#"> <li class="buy-corner">Соц.сети</li></a>
+      <a href="#"> <li class="buy-corner">Сайт</li></a>
+      <a href="#"> <li class="buy-corner">Мои магазины</li></a>
+</ul>
+{% endblock %}

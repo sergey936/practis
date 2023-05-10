@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=" {% static 'unicorn/css/style.css' %} ">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <div class="main-object">
+            <div class="information">
+                <div class="content">
+                    <section class="header">
+                        <p> {% block header %} {% endblock %} </p>
+                    </section>
+                    <section class="interface">
+                        {% block interface %} {% endblock %}
+                    </section>
+                </div>
+                <section class="footer">
+                   {% block footer %} {% endblock %}
+                </section>
+            </div>
+    </div>
+</body>
+</html>

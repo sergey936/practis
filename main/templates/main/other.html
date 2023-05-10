@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+other
+{% endblock %}
+
+{% block header %}
+<p>ВАСИЛИЙ ПУПКИН</p>
+<p style="border: 2px solid black; margin: 20px 20px 5px 10px; border-radius: 10px; height: 50px; vertical-align: middle; padding-top: 20px;">Книга отзывов и предложений</p>
+{% endblock %}
+
+{% block interface %}
+<p class="buy-corner" style="margin-left: 40px; margin-bottom: 35px;">Другое</p>
+    <ul style="text-align: center; list-style-type: none;">
+        <a href = "#"><li class="buy-corner">Положительный отзыв</li></a>
+        <a href = "#"><li class="buy-corner">Негативный отзыв</li></a>
+        <a href = "#"><li class="buy-corner">Тема для обсуждения</li></a>
+        <a href = "#"><li class="buy-corner">Свое</li></a>
+</ul>
+{% endblock %}
+
+{% block footer %}
+<a href="reviews"> <p style="border: 2px solid black; border-radius: 25px; padding: 15px 15px 15px 15px; margin-left: 10%; margin-right: 10%;">Назад</p></a>
+{% endblock %}

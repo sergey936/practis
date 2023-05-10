@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+orgName
+{% endblock %}
+
+{% block header %}
+UNICORN SYSTEM
+<p style="font-size: 20px; text-align: center;">Удобные инструменты как для вашего бизнеса так и клиента</p>
+{% endblock %}
+
+{% block footer %}
+<a href="mainpage"> <p style="border: 2px solid black; border-radius: 25px; padding: 15px 15px 15px 15px; margin-left: 10%; margin-right: 10%;">Назад</p></a>
+{% endblock %}
+
+{% block interface %}
+<section class="form">
+    <form action="/your-name/" method="post" >
+        <label for="your_name">Введите название вашей организации: </label>
+        <div class="nameOrg">
+        <input class="input-style"  id="your_name" type="text" name="your_name" value="{{ current_name }}">
+        </div>
+        <input type="submit" value="Далее">
+    </form>
+</section>
+{% endblock %}
